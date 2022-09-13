@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  height: 1000px;
+}
+
+form {
+  background-color: #50a7c2;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  opacity: 50%;
+}
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+h1 {
+  text-align: center;
+  font-size: 150px;
+  opacity: 80%;
+}
+h2 {
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 50px;
+}
+h3 {
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 25px;
+  margin: 0px 0px -10px 0px;
+}
+h4 {
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 100px;
+  margin: 0px 0px -30px 0px;
+}
+.col {
+  text-align: left;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 24px;
+  margin-left: 30px;
+}
+.signature {
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 20px;
+  opacity: 70%;
+}
+.humidity {
+  text-align: left;
+  margin: auto;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.wind {
+  text-align: left;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
