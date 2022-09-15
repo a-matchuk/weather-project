@@ -41,6 +41,7 @@ input {
   height: 100%;
   width: 100%;
   padding: 6px 10px;
+  text-align: right;
 }
 ::placeholder {
   color: rgb(255, 255, 255);
