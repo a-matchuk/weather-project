@@ -30,8 +30,8 @@ function showCity(event) {
   // if (searchInput.value) {
   //   alert(`${searchInput.value}`);
   // }
-  let h2 = document.querySelector("h2");
-  h2.innerHTML = `${searchInput.value}`;
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${searchInput.value}`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 }
 let form = document.querySelector("form");
@@ -45,6 +45,6 @@ function showTemperature(responce) {
   console.log(responce);
   console.log(CurrentTemperature);
 
-  let h4 = document.querySelector("h4");
-  h4.innerHTML = `${CurrentTemperature}°C`;
+  let strong = document.querySelector("strong");
+  strong.innerHTML = `${CurrentTemperature}°C`;
 }

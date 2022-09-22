@@ -7,8 +7,8 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  max-width: 500px;
-  margin: auto;
+  max-width: 700px;
+  margin: 40px auto;
   padding: 20px;
 }
 @keyframes gradient {
@@ -54,50 +54,39 @@ button {
   height: 44px;
 }
 h1 {
-  text-align: center;
-  font-size: 150px;
-}
-h2 {
-  text-align: center;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 50px;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Jura", sans-serif;
+  margin-left: 60px;
 }
 h3 {
-  text-align: center;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 25px;
-  margin: 0px 0px -10px 0px;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Jura", sans-serif;
+  margin-left: -30px;
 }
 h4 {
-  text-align: center;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 100px;
-  margin: 0px 0px -30px 0px;
-}
-.col {
   text-align: left;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 24px;
-  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Jura", sans-serif;
+  margin-left: -30px;
 }
-.signature {
+ul {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Jura", sans-serif;
+  margin-left: 60px;
+}
+.row {
   text-align: center;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 20px;
+}
+.col-md-6 {
+  font-family: "Jura", sans-serif;
+  font-size: 55px;
+}
+small {
+  font-family: "Jura", sans-serif;
+  font-size: 10px;
   opacity: 0.7;
-}
-.humidity {
-  text-align: left;
-  margin: auto;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 20px;
-  margin-left: 10px;
-  font-weight: bold;
-}
-.wind {
-  text-align: left;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 20px;
-  margin-left: 10px;
-  font-weight: bold;
+  margin-left: 140px;
 }

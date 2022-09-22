@@ -14,11 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div class="container">
       <div class="shadow-sm p-3 mb-5 bg-body rounded">
@@ -27,44 +26,32 @@
           <input type="submit" value="Search 🔍" />
         </form>
         <br />
-        <h1>🌦</h1>
-        <br />
-        <h2>Your city 🏡</h2>
-        <h3>Current day and time</h3>
-        <h4>10°C</h4>
-        <p class="humidity">Humidity: 80%</p>
-        <p class="wind">Wind: 15 km/h</p>
+        <h1>Your city 🏡</h1>
+        <ul>
+          <h3>Current day and time</h3>
+          <h4>Clear</h4>
+        </ul>
         <div class="row">
-          <div class="col">Monday</div>
-          <div class="col">10°C / 25°C</div>
-          <div class="col">☀️</div>
-        </div>
-        <div class="row">
-          <div class="col">Tuesday</div>
-          <div class="col">11°C / 23°C</div>
-          <div class="col">⛅️</div>
-        </div>
-        <div class="row">
-          <div class="col">Wednesday</div>
-          <div class="col">15°C / 28°C</div>
-          <div class="col">☀️</div>
-        </div>
-        <div class="row">
-          <div class="col">Thursday</div>
-          <div class="col">10°C / 30°C</div>
-          <div class="col">☀️</div>
-        </div>
-        <div class="row">
-          <div class="col">Friday</div>
-          <div class="col">15°C / 35°C</div>
-          <div class="col">⛅️</div>
+          <div class="col-md-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="Clear"
+            />
+            <strong>10°C</strong>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Humidity: 80%</li>
+              <li>Wind: 15 km/h</li>
+              <li>Precipitation: 0%</li>
+            </ul>
+          </div>
         </div>
         <br />
-        <p class="signature">
-          Coded by Alina M.
-          <a href="https://github.com/a-matchuk/weather-project">GitHub</a>
-          repository.
-        </p>
+        <small>
+          This project was coded by Alina M. and and is open-sourced on
+          <a href="https://github.com/a-matchuk/weather-project"> GitHub.</a>
+        </small>
       </div>
       <script src="src/index.js"></script>
       <script
