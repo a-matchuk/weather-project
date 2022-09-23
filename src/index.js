@@ -32,7 +32,7 @@ function showCity(event) {
   // }
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${searchInput.value}`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showInfo);
 }
 let form = document.querySelector("form");
 form.addEventListener("submit", showCity);
@@ -40,11 +40,25 @@ form.addEventListener("submit", showCity);
 // Week 5 homework
 let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
 
-function showTemperature(responce) {
+function showInfo(responce) {
   let CurrentTemperature = Math.round(responce.data.main.temp);
   console.log(responce);
   console.log(CurrentTemperature);
-
   let strong = document.querySelector("strong");
   strong.innerHTML = `${CurrentTemperature}°C`;
+
+  let CurrentDescription = responce.data.weather[0].main;
+  console.log(CurrentDescription);
+  let h4 = document.querySelector("h4");
+  h4.innerHTML = `${CurrentDescription}`;
+
+  let CurrentHumidity = responce.data.main.humidity;
+  console.log(CurrentHumidity);
+  let humid = document.getElementById("humid");
+  humid.innerHTML = `Humidity: ${CurrentHumidity} %`;
+
+  let CurrentWind = Math.round(responce.data.wind.speed);
+  console.log(CurrentHumidity);
+  let wind = document.getElementById("wind");
+  wind.innerHTML = `Wind: ${CurrentWind} km/h`;
 }
