@@ -61,4 +61,12 @@ function showInfo(responce) {
   console.log(CurrentHumidity);
   let wind = document.getElementById("wind");
   wind.innerHTML = `Wind: ${CurrentWind} km/h`;
+
+  let ShowIcon = responce.data.weather[0].icon;
+  console.log(ShowIcon);
+  let icon = document.getElementById("icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
+  );
 }
