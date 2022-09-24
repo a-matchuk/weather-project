@@ -81,3 +81,11 @@ ul {
   opacity: 0.7;
   text-align: center;
 }
+a {
+  font-family: "Jura", sans-serif;
+  color: rgb(150, 116, 177);
+}
+
+.units {
+  font-size: 20px;
+}

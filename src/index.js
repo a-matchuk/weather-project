@@ -2,6 +2,8 @@
 let now = new Date();
 console.log(now);
 
+let celsiusTemperature;
+
 let days = [
   "Sunday",
   "Monday",
@@ -41,11 +43,12 @@ form.addEventListener("submit", showCity);
 let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
 
 function showInfo(responce) {
-  let CurrentTemperature = Math.round(responce.data.main.temp);
+  celsiusTemperature = responce.data.main.temp;
+  let CurrentTemperature = Math.round(celsiusTemperature);
   console.log(responce);
   console.log(CurrentTemperature);
   let strong = document.querySelector("strong");
-  strong.innerHTML = `${CurrentTemperature}°C`;
+  strong.innerHTML = `${CurrentTemperature}`;
 
   let CurrentDescription = responce.data.weather[0].main;
   console.log(CurrentDescription);
@@ -70,3 +73,22 @@ function showInfo(responce) {
     `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
   );
 }
+
+function ShowFahrenheitTemperature(event) {
+  event.preventDefault();
+  let CurrentTemperature = Math.round(celsiusTemperature);
+  let FahrenheitTemperature = (CurrentTemperature * 9) / 5 + 32;
+  let strong = document.querySelector("#temperature");
+  strong.innerHTML = Math.round(FahrenheitTemperature);
+}
+function ShowCelsiusTemperature(event) {
+  event.preventDefault();
+  let strong = document.querySelector("#temperature");
+  strong.innerHTML = Math.round(celsiusTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", ShowFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", ShowCelsiusTemperature);
